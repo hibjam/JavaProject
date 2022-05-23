@@ -1,4 +1,5 @@
 package com.sparta.jh;
+// Written by James 
 public class App {
     public static void main( String[] args ) {
         int timeOfDay = 52; //Strongly typed, Statically typed
