@@ -1,4 +1,13 @@
-# First Java Project
+# Java SDET - week 2 
+## Contents
+<ol>
+<li><p><a href="/uri">First Java Project</a> </p>
+<li><p> Creating a BubbleSort</p>
+<li><p> Longest Palindrome Checker</p>
+</li>
+
+
+## First Java Project
 #### What time is it?
 <hr />
 <p>The aim of this Java project was to create a method that would take a 
