@@ -3,9 +3,13 @@
 <ol>
 <li><p><a href="https://github.com/hibjam/JavaProject#first-java-project" 
 title="First Java Project">First Java Project</a></p>
-<li><p> Creating a BubbleSort</p>
-<li><p> Longest Palindrome Checker</p>
-</li>
+<li><p><a href="https://github.com/hibjam/JavaProject/blob/main/readme.md#creating-a-bubblesort" 
+title="Creating a BubbleSort">Creating a BubbleSort</a></p>
+<li><p><a href="https://github.com/hibjam/JavaProject/blob/main/readme.md#palindrome-checker" 
+title="First Java Project">Palindrome Checker</a></p>
+<li><p><a href="https://github.com/hibjam/JavaProject/blob/main/readme.md#fibonacci-sequence" 
+title="First Java Project">Fibonacci Sequence</a></p></li>
+</ol>
 
 ## First Java Project
 #### What time is it?
