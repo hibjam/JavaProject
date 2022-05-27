@@ -13,13 +13,13 @@ public class BubbleSort {
 
 
     public static int[] bubbleSort(int[] array) {
-        int swap = 0;
+        int largerNum = 0;
         for(int i=0; i < array.length; i++){
-            for(int x=1; x < (array.length-i); x++){
-                if(array[x-1] > array[x]){
-                    swap = array[x-1]; // swap variable becomes no. located a x// -1
-                    array[x-1] = array[x]; // x-1 becomes number located ahead of it
-                    array[x] = swap; // x becomes number that was located behind it (prev assigned to swap var)
+            for(int index=1; index < (array.length-i); index++){
+                if(array[index-1] > array[index]){
+                    largerNum = array[index-1]; // swap variable becomes no. located a x// -1
+                    array[index-1] = array[index]; // x-1 becomes number located ahead of it
+                    array[index] = largerNum; // x becomes number that was located behind it (prev assigned to swap var)
                 }
             }
         }
