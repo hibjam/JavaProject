@@ -15,22 +15,23 @@ public class Palindrome {
                 "        \"Banana Boy! Eva, can I see bees in a cave? Madam, in Eden, I’m Adam. A man, a plan, a canal, Panama! Never a foot too far, even. \" +\n" +
                 "        \"Red roses run no risk, sir, on Nurse’s order. He lived as a devil, eh? Ned, I am a maiden. Now, sir, a war is won! Evade me, Dave! \" +\n" +
                 "        \"Dennis and Edna sinned. Step on no pets!\"";
-
+        String not = null;
         System.out.println(getLongestPalindromeFromSentence(sentence));
 
     }
     //Working off the getLongestWord method, all this does is check to see the longest word found
     // is the same legnth as any other palindromes, if it is it will add it to an ArrayList
     public static ArrayList<String> getLongestPalindromeFromSentence(String sentence) {
-        String[] splitSentence = splitSentence(sentence);
-        ArrayList<String> longestPalendrome = new ArrayList<String>();
-        for (String singleWords : splitSentence) {
-            if (singleWords.length() == getLongestWord(sentence).length()
-                    && isPalindrome(singleWords)) {
-                longestPalendrome.add(singleWords);
-            }
-        }
-        return longestPalendrome;
+        if (sentence != null) {
+            String[] splitSentence = splitSentence(sentence);
+            ArrayList<String> longestPalendrome = new ArrayList<String>();
+            for (String singleWords : splitSentence) {
+                if (singleWords.length() == getLongestWord(sentence).length()
+                        && isPalindrome(singleWords)) {
+                    longestPalendrome.add(singleWords);
+                }
+            }return longestPalendrome;
+        }return null;
     }
     // loops through the list of words and picks out the longest palindrome
     private static String getLongestWord(String sentence) {
@@ -57,10 +58,11 @@ public class Palindrome {
     private static String reverse(String wordToCheck) {
         String reverseString = "";
         String lowerCaseWordToCheck = wordToCheck.toLowerCase();
-        for (int i = wordToCheck.length() - 1; i >= 0; i--) {
-            reverseString += wordToCheck.charAt(i);
-        }
-        return reverseString.toLowerCase();
+        if (lowerCaseWordToCheck != null) {
+            for (int i = wordToCheck.length() - 1; i >= 0; i--) {
+                reverseString += wordToCheck.charAt(i);
+            }
+        } return reverseString.toLowerCase();
     }
     // checks if a word is a palindrome
     private static boolean isPalindrome(String wordToCheck) {

@@ -58,4 +58,11 @@ class PalindromeTest {
         String sentence = "The madam drove the incredibly speedy .RaCeCar. to her kayak which had a radar";
         Assertions.assertEquals(word, Palindrome.getLongestPalindromeFromSentence(sentence));
     }
+    @Test
+    @DisplayName("Check returns null if no value is entered")
+    void checkNull(){
+        String word = null;
+        Assertions.assertEquals(null, Palindrome.getLongestPalindromeFromSentence(word));
+
+    }
 }
