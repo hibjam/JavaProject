@@ -1,18 +1,18 @@
 package com.sparta.jh.BubbleSort;
 
-import java.util.Arrays;
-
 public class BubbleSort {
     public static void main(String[] args) {
-        int array[] ={29,34365,63,12,23,45,320,5};
+        int array[] = {-6, -6, -5, -5, -23, -45, -320, -73};
         bubbleSort(array);//sorting array elements using bubble sort
         System.out.println("Array After Bubble Sort");
-        for(int i=0; i < array.length; i++){
+        for (int i=0; i < array.length; i++){
             System.out.print(array[i] + " ");
         }
-        //iterates over every item in the array and prints on same line with space in between
     }
-    public static void bubbleSort(int[] array) {
+        //iterates over every item in the array and prints on same line with space in between
+
+
+    public static int[] bubbleSort(int[] array) {
         int swap = 0;
         for(int i=0; i < array.length; i++){
             for(int x=1; x < (array.length-i); x++){
@@ -23,5 +23,6 @@ public class BubbleSort {
                 }
             }
         }
+        return array;
     }
 }
